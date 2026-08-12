@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Dieynab Diatta | Applied Economics</title>
+  <title>Dieynab Diatta</title>
 
   <style>
     * {
@@ -14,201 +14,150 @@
 
     body {
       margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                   Arial, sans-serif;
       color: #252525;
       background: #ffffff;
-      line-height: 1.65;
     }
 
-    .container {
-      max-width: 1050px;
-      margin: 0 auto;
-      padding: 0 35px;
-    }
+    /* ---------- Navigation ---------- */
 
-    /* Navigation */
     nav {
-      padding: 25px 0;
+      width: 100%;
+      padding: 27px 55px;
       border-bottom: 1px solid #eeeeee;
-    }
-
-    nav .container {
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-end;
       align-items: center;
     }
 
-    .site-name {
-      font-size: 19px;
-      font-weight: 600;
-      color: #222;
-      text-decoration: none;
-    }
-
     nav a {
-      color: #555;
+      color: #444;
       text-decoration: none;
-      margin-left: 28px;
       font-size: 14px;
+      margin-left: 32px;
     }
 
     nav a:hover {
       color: #8b2332;
     }
 
-    /* Hero */
-    .hero {
+    /* ---------- Main Landing Page ---------- */
+
+    .landing {
+      min-height: calc(100vh - 75px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 70px 40px;
+    }
+
+    .content {
+      max-width: 950px;
+      width: 100%;
       display: grid;
-      grid-template-columns: 1fr 280px;
+      grid-template-columns: 280px 1fr;
       gap: 80px;
       align-items: center;
-      padding: 85px 0 70px;
     }
 
-    .hero h1 {
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: 52px;
-      font-weight: 400;
-      line-height: 1.15;
-      margin: 0 0 12px;
-      color: #202020;
-    }
-
-    .subtitle {
-      font-size: 19px;
-      color: #555;
-      margin-bottom: 25px;
-    }
-
-    .bio {
-      max-width: 650px;
-      font-size: 17px;
-      color: #444;
-    }
+    /* ---------- Photo ---------- */
 
     .photo {
-      width: 250px;
-      height: 300px;
+      width: 260px;
+      height: 320px;
       object-fit: cover;
       border-radius: 3px;
     }
 
-    /* Links */
+    /* ---------- Text ---------- */
+
+    .text h1 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 52px;
+      font-weight: 400;
+      line-height: 1.15;
+      margin: 0 0 10px;
+      color: #202020;
+    }
+
+    .title {
+      font-size: 18px;
+      line-height: 1.6;
+      color: #555;
+      margin-bottom: 28px;
+    }
+
+    .description {
+      font-size: 17px;
+      line-height: 1.75;
+      color: #444;
+      max-width: 600px;
+    }
+
+    .fields {
+      margin-top: 25px;
+      font-size: 14px;
+      color: #777;
+    }
+
+    /* ---------- Links ---------- */
+
     .links {
-      margin-top: 28px;
+      margin-top: 32px;
     }
 
     .links a {
-      display: inline-block;
-      margin-right: 24px;
       color: #8b2332;
       text-decoration: none;
-      font-size: 15px;
-      font-weight: 500;
+      margin-right: 22px;
+      font-size: 14px;
     }
 
     .links a:hover {
       text-decoration: underline;
     }
 
-    /* Sections */
-    section {
-      padding: 55px 0;
-      border-top: 1px solid #eeeeee;
-    }
+    /* ---------- Mobile ---------- */
 
-    section h2 {
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: 31px;
-      font-weight: 400;
-      margin: 0 0 28px;
-      color: #222;
-    }
-
-    .interests {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 25px;
-    }
-
-    .interest {
-      border: 1px solid #dddddd;
-      padding: 7px 14px;
-      font-size: 14px;
-      color: #555;
-      border-radius: 2px;
-    }
-
-    /* Papers */
-    .paper {
-      margin-bottom: 38px;
-      max-width: 850px;
-    }
-
-    .paper-title {
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: 20px;
-      color: #222;
-      margin-bottom: 5px;
-    }
-
-    .paper-status {
-      font-size: 13px;
-      color: #8b2332;
-      text-transform: uppercase;
-      letter-spacing: 0.7px;
-      margin-bottom: 8px;
-    }
-
-    .paper p {
-      color: #555;
-      margin-top: 5px;
-    }
-
-    .paper-links a {
-      color: #8b2332;
-      text-decoration: none;
-      margin-right: 18px;
-      font-size: 14px;
-    }
-
-    /* Footer */
-    footer {
-      border-top: 1px solid #eeeeee;
-      padding: 35px 0 45px;
-      color: #777;
-      font-size: 13px;
-    }
-
-    /* Mobile */
     @media (max-width: 750px) {
-      .container {
-        padding: 0 22px;
-      }
 
-      nav .container {
-        display: block;
+      nav {
+        padding: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
       }
 
       nav a {
-        margin-left: 0;
-        margin-right: 18px;
+        margin: 7px 13px;
       }
 
-      .hero {
+      .landing {
+        padding: 50px 25px 70px;
+      }
+
+      .content {
         grid-template-columns: 1fr;
         gap: 35px;
-        padding: 55px 0;
-      }
-
-      .hero h1 {
-        font-size: 42px;
+        text-align: center;
       }
 
       .photo {
-        width: 190px;
-        height: 230px;
+        width: 210px;
+        height: 260px;
+        margin: 0 auto;
+      }
+
+      .text h1 {
+        font-size: 42px;
+      }
+
+      .description {
+        margin: 0 auto;
+      }
+
+      .links a {
+        margin: 0 9px;
       }
     }
   </style>
@@ -216,206 +165,68 @@
 
 <body>
 
-  <!-- Navigation -->
-  <nav>
-    <div class="container">
-      <a class="site-name" href="#">Dieynab Diatta</a>
+  <!-- Top Navigation -->
 
-      <div>
-        <a href="#research">Research</a>
-        <a href="#teaching">Teaching</a>
-        <a href="#cv">CV</a>
-        <a href="#contact">Contact</a>
-      </div>
-    </div>
+  <nav>
+    <a href="research.html">Research</a>
+    <a href="teaching.html">Teaching</a>
+    <a href="cv.html">CV</a>
+    <a href="contact.html">Contact</a>
   </nav>
 
 
-  <!-- Introduction -->
-  <main>
+  <!-- Landing Page -->
 
-    <div class="container">
-      <div class="hero">
+  <main class="landing">
 
-        <div>
-          <h1>Dieynab Diatta</h1>
+    <div class="content">
 
-          <div class="subtitle">
-            PhD Student in Applied Economics<br>
-            Cornell University
-          </div>
+      <!-- Photo on the LEFT -->
 
-          <div class="bio">
-            I am a PhD student in Applied Economics at Cornell University.
-            My research lies at the intersection of development, public, and
-            labor economics, with a focus on social protection, economic
-            shocks, informality, and labor markets.
-          </div>
+      <img
+        src="profile.jpg"
+        alt="Dieynab Diatta"
+        class="photo"
+      >
 
-          <div class="links">
-            <a href="#research">Research</a>
-            <a href="#cv">CV</a>
-            <a href="mailto:YOUR_EMAIL@cornell.edu">Email</a>
-            <a href="YOUR_GOOGLE_SCHOLAR_LINK">Google Scholar</a>
-          </div>
+
+      <!-- Description on the RIGHT -->
+
+      <div class="text">
+
+        <h1>Dieynab Diatta</h1>
+
+        <div class="title">
+          PhD Student in Applied Economics<br>
+          Cornell University
         </div>
 
-        <div>
-          <img src="Linkedin_photo.jpg" alt="Dieynab Diatta" class="photo">
+        <div class="description">
+          I am a PhD student in Applied Economics at Cornell University.
+          My research lies at the intersection of development, public,
+          and labor economics, with a focus on social protection,
+          economic shocks, informality, and labor markets.
+        </div>
+
+        <div class="fields">
+          Development Economics &nbsp;·&nbsp;
+          Public Economics &nbsp;·&nbsp;
+          Labor Economics
+        </div>
+
+        <div class="links">
+          <a href="research.html">Research</a>
+          <a href="cv.html">CV</a>
+          <a href="YOUR_GOOGLE_SCHOLAR_LINK">Google Scholar</a>
+          <a href="mailto:YOUR_EMAIL@cornell.edu">Email</a>
         </div>
 
       </div>
+
     </div>
-
-
-    <!-- Research Interests -->
-    <section>
-      <div class="container">
-
-        <h2>Research Interests</h2>
-
-        <div class="interests">
-          <div class="interest">Social Protection</div>
-          <div class="interest">Economic Shocks</div>
-          <div class="interest">Informality</div>
-          <div class="interest">Labor Markets</div>
-        </div>
-
-      </div>
-    </section>
-
-
-    <!-- Research -->
-    <section id="research">
-      <div class="container">
-
-        <h2>Research</h2>
-
-        <div class="paper">
-
-          <div class="paper-status">Working Paper</div>
-
-          <div class="paper-title">
-            The Worker's Side of Formalization:
-            Health Insurance and Workers' Employment Choices in Senegal
-          </div>
-
-          <p>
-            This paper examines how the expansion of health insurance to
-            informal workers affects employment choices and access to formal
-            employment in Senegal.
-          </p>
-
-          <div class="paper-links">
-            <a href="YOUR_PAPER_LINK">Paper</a>
-            <a href="YOUR_SLIDES_LINK">Slides</a>
-          </div>
-
-        </div>
-
-
-        <div class="paper">
-
-          <div class="paper-status">Working Paper</div>
-
-          <div class="paper-title">
-            Shock Interactions and Compounding Impacts on Food Security
-          </div>
-
-          <p>
-            This paper studies how multiple shocks interact and compound
-            their effects on household food security.
-          </p>
-
-          <div class="paper-links">
-            <a href="YOUR_PAPER_LINK">Paper</a>
-            <a href="YOUR_SLIDES_LINK">Slides</a>
-          </div>
-
-        </div>
-
-
-        <div class="paper">
-
-          <div class="paper-status">Work in Progress</div>
-
-          <div class="paper-title">
-            Health Insurance, Consumer Rewards, and Insurance Take-Up
-          </div>
-
-          <p>
-            Ongoing research examining whether immediate consumer rewards
-            can increase health insurance enrollment in developing countries.
-          </p>
-
-        </div>
-
-      </div>
-    </section>
-
-
-    <!-- Teaching -->
-    <section id="teaching">
-      <div class="container">
-
-        <h2>Teaching</h2>
-
-        <p>
-          I have served as a teaching assistant for courses in economics
-          and business at Cornell University.
-        </p>
-
-      </div>
-    </section>
-
-
-    <!-- CV -->
-    <section id="cv">
-      <div class="container">
-
-        <h2>CV</h2>
-
-        <p>
-          <a href="cv.pdf" style="color:#8b2332;">
-            Download my CV
-          </a>
-        </p>
-
-      </div>
-    </section>
-
-
-    <!-- Contact -->
-    <section id="contact">
-      <div class="container">
-
-        <h2>Contact</h2>
-
-        <p>
-          Cornell University<br>
-          Ithaca, New York
-        </p>
-
-        <p>
-          <a href="mailto:YOUR_EMAIL@cornell.edu"
-             style="color:#8b2332;">
-            YOUR_EMAIL@cornell.edu
-          </a>
-        </p>
-
-      </div>
-    </section>
 
   </main>
-
-
-  <footer>
-    <div class="container">
-      © 2026 Dieynab Diatta
-    </div>
-  </footer>
 
 </body>
 </html>
 ```
-
