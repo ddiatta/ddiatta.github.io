@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -80,6 +81,13 @@
       color: #202020;
     }
 
+    .pronunciation {
+      font-size: 14px;
+      font-style: italic;
+      color: #777;
+      margin-bottom: 12px;
+    }
+
     .title {
       font-size: 18px;
       line-height: 1.6;
@@ -106,15 +114,16 @@
       margin-top: 32px;
     }
 
-    .links a {
+   
+        .links a {
       color: #8b2332;
       text-decoration: none;
       margin-right: 22px;
-      font-size: 14px;
+      font-size: 22px;
     }
-
+    
     .links a:hover {
-      text-decoration: underline;
+      color: #555;
     }
 
     /* ---------- Mobile ---------- */
@@ -195,6 +204,10 @@
 
         <h1>Dieynab Diatta</h1>
 
+        <div class="pronunciation">
+          Pronounced: Jay-nab Jaa-ta
+        </div>
+
         <div class="title">
           PhD Student in Applied Economics<br>
           Cornell University
@@ -214,10 +227,21 @@
         </div>
 
         <div class="links">
-          <a href="https://github.com/ddiatta">GitHub</a>
-          <a href="https://independent.academia.edu/DDiatta">Google Scholar</a>
-          <a href="https://www.linkedin.com/in/dieynab-diatta-27799b34/">LinkedIn</a>
-          <a href="mailto:dsd89@cornell.edu">Email</a>
+        <a href="https://github.com/ddiatta" aria-label="GitHub">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      
+        <a href="https://scholar.google.com" aria-label="Google Scholar">
+          <i class="fa-solid fa-graduation-cap"></i>
+        </a>
+      
+        <a href="https://www.linkedin.com/in/dieynab-diatta-27799b34/" aria-label="LinkedIn">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      
+        <a href="mailto:dsd89@cornell.edu" aria-label="Email">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
         </div>
 
       </div>
