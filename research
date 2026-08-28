@@ -1,0 +1,332 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Research | Dieynab Diatta</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                   Arial, sans-serif;
+      color: #252525;
+      background: #ffffff;
+    }
+
+    /* ---------- Navigation ---------- */
+
+    nav {
+      width: 100%;
+      padding: 27px 55px;
+      border-bottom: 1px solid #eeeeee;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+    nav a {
+      color: #444;
+      text-decoration: none;
+      font-size: 14px;
+      margin-left: 32px;
+    }
+
+    nav a:hover {
+      color: #8b2332;
+    }
+
+    /* ---------- Research Page ---------- */
+
+    .research {
+      max-width: 950px;
+      margin: 0 auto;
+      padding: 75px 40px 100px;
+    }
+
+    .research h1 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 48px;
+      font-weight: 400;
+      color: #202020;
+      margin: 0 0 35px;
+    }
+
+    .intro {
+      font-size: 17px;
+      line-height: 1.8;
+      color: #444;
+      max-width: 760px;
+      margin-bottom: 55px;
+    }
+
+    /* ---------- Sections ---------- */
+
+    .section {
+      margin-bottom: 55px;
+    }
+
+    .section h2 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 28px;
+      font-weight: 400;
+      color: #202020;
+      margin: 0 0 30px;
+    }
+
+    /* ---------- Papers ---------- */
+
+    .paper {
+      margin-bottom: 38px;
+      padding-left: 0;
+    }
+
+    .paper-title {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 21px;
+      line-height: 1.4;
+      color: #202020;
+      margin-bottom: 8px;
+    }
+
+    .paper-title a {
+      color: #202020;
+      text-decoration: none;
+    }
+
+    .paper-title a:hover {
+      color: #8b2332;
+    }
+
+    .authors {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 8px;
+    }
+
+    .status {
+      font-size: 13px;
+      color: #8b2332;
+      font-style: italic;
+      margin-bottom: 12px;
+    }
+
+    .paper-description {
+      font-size: 15px;
+      line-height: 1.7;
+      color: #555;
+      max-width: 760px;
+    }
+
+    /* ---------- Links ---------- */
+
+    .paper-links {
+      margin-top: 13px;
+    }
+
+    .paper-links a {
+      color: #8b2332;
+      text-decoration: none;
+      font-size: 13px;
+      margin-right: 18px;
+    }
+
+    .paper-links a:hover {
+      text-decoration: underline;
+    }
+
+    /* ---------- Mobile ---------- */
+
+    @media (max-width: 750px) {
+
+      nav {
+        padding: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      nav a {
+        margin: 7px 13px;
+      }
+
+      .research {
+        padding: 50px 25px 70px;
+      }
+
+      .research h1 {
+        font-size: 42px;
+      }
+
+      .intro {
+        font-size: 16px;
+      }
+
+      .section h2 {
+        font-size: 25px;
+      }
+
+      .paper-title {
+        font-size: 19px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ---------- Navigation ---------- -->
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="research.html">Research</a>
+    <a href="teaching.html">Teaching</a>
+    <a href="cv.html">CV</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+
+  <!-- ---------- Research ---------- -->
+
+  <main class="research">
+
+    <h1>Research</h1>
+
+    <div class="intro">
+      My research lies at the intersection of development, public, and
+      labor economics. I study how households and workers respond to
+      economic shocks and policy interventions, with a focus on social
+      protection, informality, food security, and labor markets.
+    </div>
+
+
+    <!-- ---------- Working Papers ---------- -->
+
+    <section class="section">
+
+      <h2>Working Papers</h2>
+
+
+      <div class="paper">
+
+        <div class="paper-title">
+          Shock Interactions and Food Security in Malawi
+        </div>
+
+        <div class="authors">
+          With Nathan Jensen and Joanna Upton
+        </div>
+
+        <div class="status">
+          Working Paper
+        </div>
+
+        <div class="paper-description">
+          This paper examines how different economic and environmental
+          shocks interact to affect household food security in Malawi.
+          Using repeated household survey data, we study whether exposure
+          to multiple shocks produces effects that differ from those
+          associated with individual shocks.
+        </div>
+
+        <div class="paper-links">
+          <!-- Add paper link here when available -->
+          <!--
+          <a href="YOUR-PAPER-LINK">Paper</a>
+          -->
+        </div>
+
+      </div>
+
+
+      <div class="paper">
+
+        <div class="paper-title">
+          The Worker’s Side of Formalization: Health Insurance and
+          Workers’ Employment Choices in Senegal
+        </div>
+
+        <div class="authors">
+          Dieynab Diatta
+        </div>
+
+        <div class="status">
+          Working Paper
+        </div>
+
+        <div class="paper-description">
+          This paper studies how the expansion of health insurance for
+          workers in Senegal affects employment choices and formalization.
+          I examine whether the introduction of a semi-contributory health
+          insurance scheme changed workers’ access to health insurance and
+          their participation in formal employment.
+        </div>
+
+        <div class="paper-links">
+          <!-- Add paper link here when available -->
+          <!--
+          <a href="YOUR-PAPER-LINK">Paper</a>
+          -->
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ---------- Work in Progress ---------- -->
+
+    <section class="section">
+
+      <h2>Work in Progress</h2>
+
+
+      <div class="paper">
+
+        <div class="paper-title">
+          The Vicious Cycle of Food Insecurity and Geopolitical Instability
+        </div>
+
+        <div class="authors">
+          With Christopher B. Barrett
+        </div>
+
+        <div class="status">
+          Work in Progress
+        </div>
+
+        <div class="paper-description">
+          This project examines the relationship between food insecurity
+          and geopolitical instability, with particular attention to the
+          role of food prices and social unrest.
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ---------- Research Interests ---------- -->
+
+    <section class="section">
+
+      <h2>Research Interests</h2>
+
+      <div class="paper-description">
+        Development Economics &nbsp;·&nbsp;
+        Public Economics &nbsp;·&nbsp;
+        Labor Economics
+      </div>
+
+    </section>
+
+  </main>
+
+</body>
+</html>
+```
