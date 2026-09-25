@@ -20,31 +20,69 @@
       background: #ffffff;
     }
 
-    /* ---------- Navigation ---------- */
 
-  
+
+/* ---------- Navigation ---------- */
+
 nav {
   width: 100%;
-  padding: 27px 55px;
+  padding: 24px 55px;
   border-bottom: 1px solid #eeeeee;
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  gap: 10px;
 }
 
 nav a {
-  color: #333;
+  position: relative;
+  color: #444;
   text-decoration: none;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 500;
-  margin-left: 32px;
-  padding-bottom: 5px;
-  border-bottom: 2px solid transparent;
+  padding: 10px 16px 11px;
+  border-radius: 5px 5px 0 0;
+  background: #fafafa;
+  border: 1px solid #e5e5e5;
+  border-bottom: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+  transition: all 0.2s ease;
 }
 
+/* Burgundy underline */
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  bottom: 0;
+  height: 2px;
+  background: #8b2332;
+  transform: scaleX(0);
+  transition: transform 0.2s ease;
+}
+
+/* Hover */
 nav a:hover {
   color: #8b2332;
-  border-bottom-color: #8b2332;
+  background: #f8f8f8;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.10);
+}
+
+nav a:hover::after {
+  transform: scaleX(1);
+}
+
+/* Current page */
+nav a.active {
+  color: #8b2332;
+  background: #ffffff;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.10);
+}
+
+nav a.active::after {
+  transform: scaleX(1);
 }
 
 
